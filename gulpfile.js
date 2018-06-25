@@ -40,4 +40,6 @@ gulp.task('fa', function() {
     .pipe(gulp.dest('src/css'))
 })
 
+gulp.task('build', ['js', 'fa', 'fonts']);
+
 gulp.task('default', ['js','serve', 'fa', 'fonts']);
